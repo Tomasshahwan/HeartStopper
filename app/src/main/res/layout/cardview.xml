@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@android:color/transparent">
+
+    <!-- Character Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:background="@android:color/transparent" />
+
+    <!-- Text Layout -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/transparent">
+
+        <!-- Character Name -->
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80FFFFFF"
+            android:padding="4dp"
+            android:text="Character Name"
+            android:textColor="#FDA4BA"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Additional Text -->
+        <TextView
+            android:id="@+id/textVer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Information"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:background="#80FFFFFF"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>
